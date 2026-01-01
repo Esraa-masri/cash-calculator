@@ -159,5 +159,16 @@ body.dark .dark-toggle {
   background: #0f172a;
 }
 
+.reset-btn {
+  background: transparent;
+  color: #6b7280;
+  border: 1px dashed #d1d5db;
+  margin-top: 10px;
+}
+
+.dark .reset-btn {
+  color: #9ca3af;
+  border-color: #374151;
+}
 
   

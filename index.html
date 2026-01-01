@@ -20,25 +20,27 @@
 
     <div class="field">
       <label>سعر المنتج – الليرة الجديدة</label>
-      <input type="number" id="priceNew">
+      <input type="text" inputmode="decimal" id="priceNew">
     </div>
 
     <div class="field">
       <label>سعر المنتج – الليرة القديمة</label>
-      <input type="number" id="priceOld">
+      <input type="text" inputmode="decimal" id="priceOld">
     </div>
 
     <div class="field">
       <label>المبلغ المدفوع – الليرة الجديدة</label>
-      <input type="number" id="paidNew">
+      <input type="text" inputmode="decimal" id="paidNew">
     </div>
 
     <div class="field">
       <label>المبلغ المدفوع – الليرة القديمة</label>
-      <input type="number" id="paidOld">
+      <input type="text" inputmode="decimal" id="paidOld">
     </div>
 
     <button onclick="calc()">احسب</button>
+    <button class="reset-btn" onclick="resetAll()">مسح الكل</button>
+
 
     <div class="result">
       <div id="resNew" class="main-result">—</div>

@@ -1,5 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const RATE = 100;
+  
+    const RATE = 100;
+
+
 
   window.calc = function () {
     const priceNew = Number(document.getElementById("priceNew").value || 0);
@@ -26,3 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
     btn.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
   };
 });
+
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("service-worker.js");
+}
+
